@@ -22,32 +22,29 @@ In this project, you will find a PDF of my presentation, code files for the Stre
 
 ### Slideshow PDF:
 
-[PV_Trip_Recommender.pdf](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/PV_Trip_Recommender.pdf)
+[PV_Trip_Recommender.pdf](https://github.com/lindsayread/Hotel_Recommender/blob/master/PV_Trip_Recommender.pdf)
 
 ### Jupyter Notebook Files:
 
-In [HotelsDF.ipynb](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/HotelsDF.ipynb), I used the Google Places API to get information on hotels in Puerto Vallarta.
+In [HotelsDF.ipynb](https://github.com/lindsayread/Hotel_Recommender/blob/master/HotelsDF.ipynb), I used the Google Places API to get information on hotels in Puerto Vallarta.
 
-In [EDA.ipynb](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/EDA.ipynb), I did some basic EDA and converted the JSON formatted geometry column to separate latitude and longitude columns.
+In [EDA.ipynb](https://github.com/lindsayread/Hotel_Recommender/blob/master/EDA.ipynb), I did some basic EDA and converted the JSON formatted geometry column to separate latitude and longitude columns.
 
-In [NLPHotelReviews.ipynb](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/NLPHotelReviews.ipynb), I tried out some preliminary NLP topic modeling methods like NMF and LSA.
+In [NLPHotelReviews.ipynb](https://github.com/lindsayread/Hotel_Recommender/blob/master/NLPHotelReviews.ipynb), I tried out some preliminary NLP topic modeling methods like NMF and LSA.
 
-In [NLPforAPP.ipynb](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/NLPforAPP.ipynb), I used the Google News Word2Vec model with the Gensim library to vectorize all words for each hotel's reviews. I then got the mean of all vectorized words for each hotel to produce one, 300 dimensional vector for each hotel.
+In [NLPforAPP-Copy1.ipynb](https://github.com/lindsayread/Hotel_Recommender/blob/master/NLPforAPP-Copy1.ipynb), I used the Google News Word2Vec model with the Gensim library to vectorize all words for each hotel's reviews. I then got the mean of all vectorized words for each hotel to produce one, 300 dimensional vector for each hotel.
 
-In RadiusAroundHotel.ipynb](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/RadiusAroundHotel.ipynb), I used the latitude and longitude of each hotel to call upon the Google Places API, again, to get information on places around the hotel (ie. restaurants, tourist attractions, art galleries, gyms, casinos, etc.). This notebook contains the functions I used to get information like: number of restaurants nearby, mean rating of restaurants nearby, and top 3 restaurants nearby.
+In [RadiusAroundHotel.ipynb](https://github.com/lindsayread/Hotel_Recommender/blob/master/RadiusAroundHotel.ipynb), I used the latitude and longitude of each hotel to call upon the Google Places API, again, to get information on places around the hotel (ie. restaurants, tourist attractions, art galleries, gyms, casinos, etc.). This notebook contains the functions I used to get information like: number of restaurants nearby, mean rating of restaurants nearby, and top 3 restaurants nearby.
 
-In [StreamLitPrep.ipynb](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/StreamLitPrep.ipynb), I got the dataframes ready for use in the StreamLit app.
+In [StreamLitPrep.ipynb](https://github.com/lindsayread/Hotel_Recommender/blob/master/StreamLitPrep.ipynb), I got the dataframes ready for use in the StreamLit app.
 
 ### Streamlit App Files:
 
-In [streamlitFinalProd.py](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/streamlitFinalProd.py), you will find the basic layout of the StreamLit app.
+In [streamlitFinalProd.py](https://github.com/lindsayread/Hotel_Recommender/blob/master/streamlitFinalProd.py), you will find the basic layout of the StreamLit app.
 
-[tb_merged.py](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/tb_merged.py) contains a function that return the cosine similarity matrix for the NLP (text input) portion of the app and a function that returns the cosine similarity matrix for the features selected portion of the app.
+[tb_merged.py](https://github.com/lindsayread/Hotel_Recommender/blob/master/tb_merged.py) contains a function that return the cosine similarity matrix for the NLP (text input) portion of the app and a function that returns the cosine similarity matrix for the features selected portion of the app.
 
-[nlp_and_others.py](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/nlp_and_others.py) calls on the functions from tb_merged to create a mean cosine similarity matrix (based on both the NLP (text input) cosine similarity matrix and the other selected features similarity matrix). This file also streamlines the output for the app, including a map of the recommended hotels, and information about each recommended hotel.
-
-### README.md:
-- [README.md](https://github.com/thisismetis/chi20_ds15/tree/master/student_submissions/projects/project-05/read_lindsay/README.md)
+[nlp_and_others.py](https://github.com/lindsayread/Hotel_Recommender/blob/master/nlp_and_others.py) calls on the functions from tb_merged to create a mean cosine similarity matrix (based on both the NLP (text input) cosine similarity matrix and the other selected features similarity matrix). This file also streamlines the output for the app, including a map of the recommended hotels, and information about each recommended hotel.
 
 ## Data:
 
