@@ -12,8 +12,29 @@ Once I had the 5 most recent hotel reviews (in English) for each hotel, I used N
 
 Using the latitude and longitude of each hotel, I used the Google Places API, again, to extract even more information. I created a function that would return the number of [restaurants] within 800 m, the mean rating of [restaurants] within 800 m, and the top 3 rated [restaurants] within 800 m for several different types of places, including restaurants, tourist attractions, art galleries, gyms, and casinos.
 
+## Data:
+
+Data for this project was gathered using the [Google Places API](https://developers.google.com/places/web-service/overview).
+
+## Skills & Analysis:
+
+- API Utilization
+- Natural Language Processing (NLP) techniques
+- Feature Engineering
+- Unsupervised Learning Techniques
+- Tokenization
+- Word Embeddings
+- Cosine Similarity
+- Interactive StreamLit App
+- Dashboard creation
+
 ### The App:
 
+<img width="1305" alt="Screen Shot 2021-03-26 at 10 09 43 AM" src="https://user-images.githubusercontent.com/65792127/112661353-0b9d0380-8e1c-11eb-988f-22f834fcbcc8.png">
+
+<img width="1302" alt="Screen Shot 2021-03-26 at 10 13 24 AM" src="https://user-images.githubusercontent.com/65792127/112661395-15bf0200-8e1c-11eb-9b36-d998222886e5.png">
+
+<img width="1302" alt="Screen Shot 2021-03-26 at 10 13 54 AM" src="https://user-images.githubusercontent.com/65792127/112661428-1f486a00-8e1c-11eb-835f-0f961acd4fa2.png">
 
 
 ## Files:
@@ -45,19 +66,3 @@ In [streamlitFinalProd.py](https://github.com/lindsayread/Hotel_Recommender/blob
 [tb_merged.py](https://github.com/lindsayread/Hotel_Recommender/blob/master/tb_merged.py) contains a function that return the cosine similarity matrix for the NLP (text input) portion of the app and a function that returns the cosine similarity matrix for the features selected portion of the app.
 
 [nlp_and_others.py](https://github.com/lindsayread/Hotel_Recommender/blob/master/nlp_and_others.py) calls on the functions from tb_merged to create a mean cosine similarity matrix (based on both the NLP (text input) cosine similarity matrix and the other selected features similarity matrix). This file also streamlines the output for the app, including a map of the recommended hotels, and information about each recommended hotel.
-
-## Data:
-
-Data for this project was gathered using the [Google Places API](https://developers.google.com/places/web-service/overview).
-
-## Skills & Analysis:
-
-- API Utilization
-- Natural Language Processing (NLP) techniques
-- Feature Engineering
-- Unsupervised Learning Techniques
-- Tokenization
-- Word Embeddings
-- Cosine Similarity
-- Interactive StreamLit App
-- Dashboard creation
